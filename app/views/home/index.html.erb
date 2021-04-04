@@ -21,16 +21,17 @@
   </div>
 </div>
 <br><br>
+
 <label for="X">Choose X axis</label>
-<select name="x-axis" id="x_select">
-  <option value="0">0</option>
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-</select>
-<p>
-  <label for="y">Choose y axis</label>
+  <select name="x-axis" id="x_select">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+
+<label for="y">Choose y axis</label>
   <select name="y-axis" id="y_select">
     <option value="0">0</option>
     <option value="1">1</option>
@@ -38,8 +39,8 @@
     <option value="3">3</option>
     <option value="4">4</option>
   </select>
-<p>
-  <label for="face">Choose face</label>
+
+<label for="face">Choose face</label>
   <select name="face" id="face_select">
     <option value="North">North</option>
     <option value="South">South</option>
@@ -47,11 +48,24 @@
     <option value="West">West</option>
   </select>
 
-  <br><br>
-  <button id="place" type="button">Place</button>
-  <button id="move" type="button">Move</button>
-  <button id="left" type="button">Left</button>
-  <button id="right" type="button">Right</button>
-  <button type="button" id="report" class="btn btn-info btn-lg">Open Modal</button>
+<button id="place" class="btn btn-primary" type="button">Place</button>
+<br><br>
+<div class=row>
+  <div class= "col-md-1">
+    <button id="move" class="btn btn-warning btn-med" type="button">Move</button>
+  </div>
+
+  <div class= "col-md-1">
+    <button id="left" class="btn btn-info btn-med" type="button">Left</button>
+  </div>
+
+  <div class= "col-md-1">
+    <button id="right" class="btn btn-danger btn-med" type="button">Right</button>
+  </div>
+
+  <div class= "col-md-1">
+    <button type="button" id="report" class="btn btn-info btn-med">Report</button>
+  </div>
+</div>
 
 
