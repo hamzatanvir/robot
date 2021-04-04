@@ -1,0 +1,57 @@
+<div class="wrapper">
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Report</h4>
+      </div>
+      <div class="modal-body">
+        <p>Output:</p>
+        <p id="x_pos"></p>
+        <p id="y_pos"></p>
+        <p id="face"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<br><br>
+<label for="X">Choose X axis</label>
+<select name="x-axis" id="x_select">
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+<p>
+  <label for="y">Choose y axis</label>
+  <select name="y-axis" id="y_select">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+<p>
+  <label for="face">Choose face</label>
+  <select name="face" id="face_select">
+    <option value="North">North</option>
+    <option value="South">South</option>
+    <option value="East">East</option>
+    <option value="West">West</option>
+  </select>
+
+  <br><br>
+  <button id="place" type="button">Place</button>
+  <button id="move" type="button">Move</button>
+  <button id="left" type="button">Left</button>
+  <button id="right" type="button">Right</button>
+  <button type="button" id="report" class="btn btn-info btn-lg">Open Modal</button>
+
+

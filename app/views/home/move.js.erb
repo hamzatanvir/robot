@@ -1,0 +1,7 @@
+<% if @error %>
+alert("<%= @error %>")
+<% else %>
+$("#robot").remove();
+$("<%= "##{@new_position}" %>").append("<i id='robot' face='<%= @current_face %>' class='fa fa-android'></i>");
+change_icon_pointing_position();
+<% end %>
