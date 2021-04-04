@@ -62,7 +62,7 @@ $(document).ready(function () {
         var current_face = $('#face_select option:selected').val();
         var x_pos = $('#x_select option:selected').val();
         var y_pos = $('#y_select option:selected').val();
-        var new_position = $.trim(`${x_pos}${y_pos}`);
+        var new_position = $.trim("${x_pos}${y_pos}");
         $.ajax({
             method: 'GET',
             url: '/place?new_position=' + new_position + '&current_face=' + current_face,
