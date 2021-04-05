@@ -1,71 +1,81 @@
-<div class="wrapper">
-</div>
-<div class="modal fade" id="myModal" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Report</h4>
+<div class="custom-robot">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-6">
+            <div class="wrapper">
+            </div>
+         </div>
+         <div class="col-md-6">
+            <div class="form-group">
+               <div class="form-row custom-field">
+                  <p>Please Select the co-ordinates for robot and press the place button.</p>
+                  <hr>
+                  <label for="X">Choose X axis</label>
+                  <select name="x-axis" id="x_select">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                  </select>
+                  <label for="y">Choose y axis</label>
+                  <select name="y-axis" id="y_select">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                  </select>
+                  <label for="face">Choose face</label>
+                  <select name="face" id="face_select">
+                     <option value="North">North</option>
+                     <option value="South">South</option>
+                     <option value="East">East</option>
+                     <option value="West">West</option>
+                  </select>
+               </div>
+               <div class="form-row">
+                  <div class= "col-md-12">
+                     <button id="place" class="btn btn-primary" type="button">Place</button>
+                  </div>
+               </div>
+               <div class="form-row">
+                  <div class= "col-md-4">
+                     <button id="move" class="btn btn-warning btn-med" type="button">Move</button>
+                  </div>
+                  <div class= "col-md-4">
+                     <button id="left" class="btn btn-info btn-med" type="button">Left</button>
+                  </div>
+                  <div class= "col-md-4">
+                     <button id="right" class="btn btn-danger btn-med" type="button">Right</button>
+                  </div>
+               </div>
+               <div class="form-row">
+                  <div class= "col-md-12">
+                     <button type="button" id="report" class="btn btn-success btn-med">Report</button>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-      <div class="modal-body">
-        <p>Output:</p>
-        <p id="x_pos"></p>
-        <p id="y_pos"></p>
-        <p id="face"></p>
+   </div>
+   <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4 class="modal-title">Report</h4>
+            </div>
+            <div class="modal-body">
+               <p>Output:</p>
+               <p id="x_pos"></p>
+               <p id="y_pos"></p>
+               <p id="face"></p>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+         </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
+   </div>
 </div>
-<br><br>
-<p>Please Select the co-ordinates for robot and press the place button.</p>
-<label for="X">Choose X axis</label>
-  <select name="x-axis" id="x_select">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-  </select>
-
-<label for="y">Choose y axis</label>
-  <select name="y-axis" id="y_select">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-  </select>
-
-<label for="face">Choose face</label>
-  <select name="face" id="face_select">
-    <option value="North">North</option>
-    <option value="South">South</option>
-    <option value="East">East</option>
-    <option value="West">West</option>
-  </select>
-
-<button id="place" class="btn btn-primary" type="button">Place</button>
-<br><br>
-<div class=row>
-  <div class= "col-md-1">
-    <button id="move" class="btn btn-warning btn-med" type="button">Move</button>
-  </div>
-
-  <div class= "col-md-1">
-    <button id="left" class="btn btn-info btn-med" type="button">Left</button>
-  </div>
-
-  <div class= "col-md-1">
-    <button id="right" class="btn btn-danger btn-med" type="button">Right</button>
-  </div>
-
-  <div class= "col-md-1">
-    <button type="button" id="report" class="btn btn-info btn-med">Report</button>
-  </div>
-</div>
-
-
