@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Robot-Axis ruby on rails based app.
 
-Things you may want to cover:
 
-* Ruby version
+Moving Robot on the Table with Ability to change face:
 
-* System dependencies
+* Robot can move freely on the table in its axis as if it's close to the corner it will popup the message that the robot can fall from the table.Cancel changes
+* You can change the position of robot by selecting its x-axis, y-axis and face pointing to (north, south, east or west) 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+here's a demo link for the repository.
+https://robot-test-ik.herokuapp.com/
